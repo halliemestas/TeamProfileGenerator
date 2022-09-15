@@ -260,10 +260,6 @@ function createHTML()
         
         
             <style>
-                .card-columns {
-                    @include media-breakpoint(lg) {
-                        column-count: 4;
-                    }
         
                     html {
                         padding: 20px;
@@ -334,7 +330,7 @@ function createHTML()
                         <div class="card-body text-dark">
                             <div class="card" style="width: 16rem;">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item" style="text-align:left"><strong>${p.getID()}</strong></li>
+                                    <li class="list-group-item" style="text-align:left"><strong> ID: ${p.getID()}</strong></li>
                                     <li class="list-group-item" style="text-align:left"><strong><a href="mailto:${p.getEmail()}"> Email:${p.getEmail()} </a> </strong>
                                     </li>
                                     <li class="list-group-item" style="text-align:left"><strong>${p.getSpecial()}</strong>
